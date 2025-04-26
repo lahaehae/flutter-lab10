@@ -22,7 +22,7 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    askNotificationPermission(); // <-- сюда вставляем вызов
+    askNotificationPermission();
   }
 
   void askNotificationPermission() async {
