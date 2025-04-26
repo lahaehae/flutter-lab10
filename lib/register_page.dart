@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_database/firebase_database.dart';
+import 'package:lab10/notification_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -30,6 +31,10 @@ class _RegisterPageState extends State<RegisterPage> {
       'email': email,
       'password': password,
     });
+    await NotificationService.showNotification(
+      'Регистрация успешна',
+      'Добро пожаловать, $name!',
+    );
 
     // --- Сохраняем в SharedPreferences ---
     final prefs = await SharedPreferences.getInstance();
