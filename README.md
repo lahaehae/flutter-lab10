@@ -1,3 +1,4 @@
 # lab10
 
-A new Flutter project.
+## Билд апк
+ Апк находится в build\app\outputs\flutter-apk\app-release.apk
